@@ -1,22 +1,22 @@
-// API key mine: 272cbee6097848e689b2a7d21011d184
-// API key aley: a98f7b189e0548949e54bd201f7742bc
+import 'package:flutter_dotenv/flutter_dotenv.dart'; // Import dotenv package
 
-class AppUrls{
+class AppUrls {
+  static final String _apiKeyIawais = dotenv.env['NEWS_API_KEY_IAWAIS']!;
+  static final String _apiKeyIali = dotenv.env['NEWS_API_KEY_IALI']!;
 
-static var topHeadlinesNewsEndPoint = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=272cbee6097848e689b2a7d21011d184';
+  static var topHeadlinesNewsEndPoint = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=$_apiKeyIawais';
 
-static var allSourcesNewsEndPoint = 'https://newsapi.org/v2/top-headlines/sources?apiKey=272cbee6097848e689b2a7d21011d184';
+  static var allSourcesNewsEndPoint = 'https://newsapi.org/v2/top-headlines/sources?apiKey=$_apiKeyIawais';
 
-static var specificSourceNewsEndPoint = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=272cbee6097848e689b2a7d21011d184';
+  static var specificSourceNewsEndPoint = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=$_apiKeyIawais';
 
-static String specificNewsChannelHeadlinesEndPoint(String channelName) {
-  return 'https://newsapi.org/v2/top-headlines?sources=$channelName&apiKey=272cbee6097848e689b2a7d21011d184';
-}
+  static String specificNewsChannelHeadlinesEndPoint(String channelName) {
+    return 'https://newsapi.org/v2/top-headlines?sources=$channelName&apiKey=$_apiKeyIawais';
+  }
 
-static var categoryNewsEndPoint = 'https://newsapi.org/v2/everything?q=general&apiKey=a98f7b189e0548949e54bd201f7742bc';
+  static var categoryNewsEndPoint = 'https://newsapi.org/v2/everything?q=general&apiKey=$_apiKeyIali';
 
-static String specificCategoriesNewsEndPoint(String category){
-  return 'https://newsapi.org/v2/everything?q=$category&apiKey=272cbee6097848e689b2a7d21011d184';
-}
-
+  static String specificCategoriesNewsEndPoint(String category) {
+    return 'https://newsapi.org/v2/everything?q=$category&apiKey=$_apiKeyIawais';
+  }
 }
