@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # news_app_flutter
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# news_app_with_mvvm
+>>>>>>> 3c1722e9f2ce5a83df8e2038ebcb4d23bb77068f
