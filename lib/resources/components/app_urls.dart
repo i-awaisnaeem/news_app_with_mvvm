@@ -1,5 +1,5 @@
-// Your API key is: 272cbee6097848e689b2a7d21011d184
-// Your API key is: a98f7b189e0548949e54bd201f7742bc
+// API key mine: 272cbee6097848e689b2a7d21011d184
+// API key aley: a98f7b189e0548949e54bd201f7742bc
 
 class AppUrls{
 
